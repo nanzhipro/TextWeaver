@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI革命与职业未来 | 米卡·考夫曼</title>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/mermaid/8.14.0/mermaid.min.js"></script>
+    <style>
+        :root {
+            --primary: #0a2540;
+            --secondary: #635bff;
+            --accent: #ff5b79;
+            --text: #1a1f36;
+            --text-light: #425466;
+            --bg: #ffffff;
+            --bg-alt: #f7fafc;
+            --bg-card: #ffffff;
+            --border: #e3e8ee;
+            --shadow: rgba(60, 66, 87, 0.08);
+            --highlight: #fffbe6;
+        }
+
+        .dark {
+            --primary: #635bff;
+            --secondary: #9f92ff;
+            --accent: #ff5b79;
+            --text: #f5f5f7;
+            --text-light: #a0a0a6;
+            --bg: #0a0a0a;
+            --bg-alt: #111111;
+            --bg-card: #1a1a1a;
+            --border: #2a2a2a;
+            --shadow: rgba(0, 0, 0, 0.3);
+            --highlight: #2d2b17;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", "Hiragino Sans GB", Simsun, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        blockquote {
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        .first-letter:first-letter {
+            font-size: 3.5rem;
+            font-weight: 700;
+            float: left;
+            line-height: 0.8;
+            margin-right: 0.2em;
+            color: var(--accent);
+        }
+
+        .highlight {
+            background-color: var(--highlight);
+            padding: 0.2em 0.4em;
+            border-radius: 0.2em;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px var(--shadow);
+        }
+
+        .quote-card {
+            border-left: 4px solid var(--accent);
+        }
+
+        .number-badge {
+            background-color: var(--primary);
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 1rem;
+        }
+
+        .strategy-item {
+            transition: transform 0.2s;
+        }
+
+        .strategy-item:hover {
+            transform: translateX(5px);
+        }
+
+        .theme-toggle:focus {
+            outline: none;
+        }
+
+        @media (max-width: 640px) {
+            .first-letter:first-letter {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <header class="relative">
+        <div class="absolute top-4 right-4 z-10">
+            <button id="themeToggle"
+                class="theme-toggle p-2 rounded-full bg-opacity-70 backdrop-blur-sm bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
+                <i class="fas fa-sun dark:hidden"></i>
+                <i class="fas fa-moon hidden dark:block"></i>
+            </button>
+        </div>
+
+        <div
+            class="relative bg-gradient-to-br from-purple-600 to-blue-600 dark:from-purple-900 dark:to-blue-900 py-20 px-4 sm:px-6 lg:px-8 text-white overflow-hidden">
+            <div class="absolute inset-0 bg-opacity-30 bg-black"></div>
+            <div class="absolute right-0 bottom-0 opacity-10">
+                <i class="fas fa-robot text-[20rem]"></i>
+            </div>
+            <div class="relative max-w-4xl mx-auto">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">AI革命浪潮下的职场生存指南</h1>
+                <p class="text-xl sm:text-2xl text-purple-100 dark:text-purple-200 max-w-3xl">
+                    面对颠覆性的技术变革，如何在行业中脱颖而出？
+                </p>
+                <div class="mt-8 flex items-center">
+                    <img src="https://api.dicebear.com/6.x/micah/svg?seed=Micha&backgroundColor=b6e3f4" alt="米卡·考夫曼"
+                        class="w-12 h-12 rounded-full border-2 border-white">
+                    <div class="ml-4">
+                        <p class="font-medium">米卡·考夫曼</p>
+                        <p class="text-sm text-purple-100 dark:text-purple-200">未来工作顾问 · 2024年4月</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-12">
+        <article>
+            <div class="prose prose-lg dark:prose-invert max-w-none">
+                <div class="mb-12">
+                    <p class="first-letter mb-6 text-lg leading-relaxed">
+                        我始终推崇直言不讳，厌恶那些为逃避令人不快的真相而粉饰现实之人。直言不讳的核心在于关怀。正因为你真心在乎朋友和同事，才会坦诚相告，以期他们能理解真相、获得成长并走向成功。
+                    </p>
+
+                    <div class="quote-card bg-opacity-10 bg-purple-500 dark:bg-opacity-20 p-6 my-8 rounded-lg">
+                        <blockquote class="text-xl sm:text-2xl font-medium italic text-center">
+                            <i class="fas fa-quote-left text-purple-400 opacity-50 mr-2"></i>
+                            那么，这个残酷的事实摆在眼前：人工智能即将取代你的工作。说实话，连我的饭碗也岌岌可危。这记警钟为你而鸣。
+                            <i class="fas fa-quote-right text-purple-400 opacity-50 ml-2"></i>
+                        </blockquote>
+                    </div>
+
+                    <p class="my-6">
+                        无论你是程序员、设计师、产品经理、数据科学家、律师、客服代表、销售人员还是财务人员，人工智能都将改变你的工作方式。
+                    </p>
+
+                    <p class="my-6">
+                        你必须认清一个现实：过去所谓的"简单任务"将不复存在；曾经的"困难任务"会变得简单，而"不可能任务"将成为新的挑战。若不能在本领域出类拔萃、成为专家，数月之内你就可能面临转行的压力。这不是危言耸听。我指的不是你在
+                        Fiverr 的工作，而是你在整个行业中的职业生存能力。
+                    </p>
+
+                    <div
+                        class="flex items-center my-8 p-5 bg-red-50 dark:bg-red-900 dark:bg-opacity-20 rounded-lg border-l-4 border-red-500">
+                        <div class="mr-4 text-red-500 dark:text-red-400">
+                            <i class="fas fa-exclamation-circle text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-red-700 dark:text-red-400">我们都会完蛋吗？</h3>
+                            <p class="text-red-700 dark:text-red-300">并非所有人，但那些迟迟不能觉醒、无法迅速认清现实的人，恐怕难逃厄运。</p>
+                        </div>
+                    </div>
+
+                    <div class="quote-card bg-opacity-10 bg-blue-500 dark:bg-opacity-20 p-6 my-8 rounded-lg">
+                        <blockquote class="text-lg font-medium">
+                            <i class="fas fa-quote-left text-blue-400 opacity-50 mr-2"></i>
+                            我们能做些什么呢？首先，给自己一点时间消化这些信息。喝杯水冷静一下。如果觉得有用，对着镜子大声喊出来也无妨。现在请放松——慌乱从来解决不了问题。下面我们就来探讨，如何让你在所在领域脱颖而出：
+                            <i class="fas fa-quote-right text-blue-400 opacity-50 ml-2"></i>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <section id="strategies" class="my-12">
+                    <h2 class="text-3xl font-bold mb-8 text-center">
+                        <span class="inline-block border-b-4 border-purple-500 pb-2">七大生存战略</span>
+                    </h2>
+
+                    <div class="space-y-8">
+                        <div class="strategy-item flex p-5 bg-opacity-5 bg-primary dark:bg-opacity-20 rounded-lg">
+                            <div class="number-badge">1</div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">精通AI解决方案</h3>
+                                <p>深入学习、研究并精通你所在领域最新的人工智能解决方案。尝试多种工具，找到能让你如虎添翼的方案。这里的"超能力"是指：在单位时间内产出更多成果，同时保证每次交付的质量更优。
+                                </p>
+                                <div class="mt-3 flex flex-wrap gap-2">
+                                    <span
+                                        class="inline-block px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-300 text-sm rounded-full"><i
+                                            class="fas fa-code mr-1"></i>Cursor</span>
+                                    <span
+                                        class="inline-block px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-300 text-sm rounded-full"><i
+                                            class="fas fa-headset mr-1"></i>Intercom Fin</span>
+                                    <span
+                                        class="inline-block px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-300 text-sm rounded-full"><i
+                                            class="fas fa-balance-scale mr-1"></i>Lexis+ AI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="strategy-item flex p-5 bg-opacity-5 bg-primary dark:bg-opacity-20 rounded-lg">
+                            <div class="number-badge">2</div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">寻找AI导师</h3>
+                                <p>寻找团队中最资深的专家，他们能帮助你深入了解人工智能领域的最新进展和尖端技术。</p>
+                            </div>
+                        </div>
+
+                        <div class="strategy-item flex p-5 bg-opacity-5 bg-primary dark:bg-opacity-20 rounded-lg">
+                            <div class="number-badge bg-accent">3</div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">优化时间资产</h3>
+                                <p class="highlight font-medium">时间是我们最宝贵的资产——若仍以 2024 年的方式工作，那就大错特错了！当下你需要做得更多、更快、且更高效。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="strategy-item flex p-5 bg-opacity-5 bg-primary dark:bg-opacity-20 rounded-lg">
+                            <div class="number-badge">4</div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">转型为提示词工程师</h3>
+                                <p>谷歌时代已终结。LLM 和生成式 AI 成为新常态，若不能精通运用这些技术，你的竞争力将迅速贬值。</p>
+                            </div>
+                        </div>
+
+                        <div class="strategy-item flex p-5 bg-opacity-5 bg-primary dark:bg-opacity-20 rounded-lg">
+                            <div class="number-badge">5</div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">提升组织AI效能</h3>
+                                <p>积极参与运用 AI 工具和技术提升组织效率。在尚未充分利用现有资源的情况下，盲目增聘人手并非明智之举。</p>
+                            </div>
+                        </div>
+
+                        <div class="strategy-item flex p-5 bg-opacity-5 bg-primary dark:bg-opacity-20 rounded-lg">
+                            <div class="number-badge">6</div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">主动助力战略</h3>
+                                <p>深入理解公司战略，积极助力目标达成。不要被动等待被邀请参加所谓的集思广益会议——这种会议根本不存在。你应该主动出击，随时提出自己的创意。</p>
+                            </div>
+                        </div>
+
+                        <div class="strategy-item flex p-5 bg-opacity-5 bg-primary dark:bg-opacity-20 rounded-lg">
+                            <div class="number-badge">7</div>
+                            <div>
+                                <h3 class="font-bold text-xl mb-2">自我主导学习</h3>
+                                <p>别再被动等待外界或职场为你提供学习和成长的机会，主动为自己创造机遇。我承诺会全力帮助每一个愿意自我提升的人。</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="my-16">
+                    <h2 class="text-2xl font-bold mb-6">AI与工作转型思维导图</h2>
+                    <div class="card p-4 overflow-hidden">
+                        <div class="mermaid">
+                            graph TD
+                            A[AI时代的工作转型] --> B[危机]
+                            A --> C[机遇]
+
+                            B --> D[简单任务消失]
+                            B --> E[竞争加剧]
+                            B --> F[技能快速贬值]
+
+                            C --> G[效率倍增]
+                            C --> H[新角色出现]
+                            C --> I[创造力释放]
+
+                            G --> J[单位时间内产出更多]
+                            G --> K[质量提升]
+
+                            H --> L[提示词工程师]
+                            H --> M[AI训练专家]
+                            H --> N[人机协作管理]
+
+                            I --> O[专注高价值任务]
+                            I --> P[开拓新市场]
+
+                            style A fill:#635bff,stroke:#333,stroke-width:2px,color:white
+                            style B fill:#ff5b79,stroke:#333,stroke-width:1px,color:white
+                            style C fill:#00c853,stroke:#333,stroke-width:1px,color:white
+                        </div>
+                    </div>
+                </section>
+
+                <section class="my-16">
+                    <h2 class="text-2xl font-bold mb-6">反思与行动</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="card p-6 rounded-lg">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-thumbs-down text-4xl text-red-500"></i>
+                                <h3 class="text-xl font-bold mt-2">若你反感我所写的内容</h3>
+                            </div>
+                            <p>若你觉得我满口荒唐，或只是个危言耸听的混账——大可一笑置之。我深爱诸位，唯愿你们前程似锦，但恕我直言，若对现实视而不见，恐难期许锦绣前程。</p>
+                        </div>
+
+                        <div class="card p-6 rounded-lg">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-thumbs-up text-4xl text-green-500"></i>
+                                <h3 class="text-xl font-bold mt-2">若你认同我的观点</h3>
+                            </div>
+                            <p>若你心底认同我的观点，并希望我们都能站在历史正确的一边，请与我共同探讨公司及个人职业发展的前路。我们拥有卓越的企业和璀璨的未来，但必须清醒认识到：前路绝非坦途，过程充满艰辛与挑战，然而这一切终将值得。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="my-12 p-6 border border-dashed border-gray-300 dark:border-gray-700 rounded-lg text-center">
+                    <p class="italic mb-4">这条信息值得深思。我已请 Shelly 在接下来几周为我的日程安排预留时间，以便有意与我深入交流、共话未来的同事能够前来。期待与各位会面。</p>
+                    <p class="font-serif font-bold text-right text-xl">此致</p>
+                    <p class="font-serif text-right text-xl mt-2">米卡·考夫曼</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="bg-gray-100 dark:bg-gray-900 py-10 mt-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <p class="font-bold text-lg">AI革命与职业未来</p>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">© 2024 米卡·考夫曼</p>
+                </div>
+
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#"
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">
+                        <i class="fab fa-twitter text-2xl"></i>
+                    </a>
+                    <a href="#"
+                        class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 初始化主题
+        function initTheme() {
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        }
+
+        // 切换主题
+        function toggleTheme() {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        }
+
+        // 初始化Mermaid
+        function initMermaid() {
+            mermaid.initialize({
+                startOnLoad: true,
+                theme: document.documentElement.classList.contains('dark') ? 'dark' : 'default',
+                securityLevel: 'loose',
+                themeVariables: {
+                    primaryColor: '#635bff',
+                    primaryTextColor: '#fff',
+                    secondaryColor: '#ff5b79',
+                    tertiaryColor: document.documentElement.classList.contains('dark') ? '#2a2a2a' : '#f7fafc'
+                }
+            });
+        }
+
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function () {
+            initTheme();
+            initMermaid();
+
+            // 主题切换按钮事件
+            document.getElementById('themeToggle').addEventListener('click', function () {
+                toggleTheme();
+                // 重新初始化Mermaid以适应新主题
+                setTimeout(function () {
+                    initMermaid();
+                    mermaid.init(undefined, document.querySelectorAll('.mermaid'));
+                }, 100);
+            });
+
+            // 添加滚动动画
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.strategy-item, .card').forEach(item => {
+                item.classList.add('transition-all', 'duration-500', 'opacity-0', 'translate-y-10');
+                observer.observe(item);
+            });
+        });
+    </script>
+</body>
+
+</html>

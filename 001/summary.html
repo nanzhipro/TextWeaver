@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恢复生命力指南 | 概览</title>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2a6b54;
+            --secondary-color: #f0f4f1;
+            --accent-color: #e79e4f;
+            --text-color: #333333;
+            --light-text: #6b7280;
+            --dark-bg: #1a202c;
+            --dark-text: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .dark {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+        .dark .card {
+            background-color: #2d3748;
+            color: var(--dark-text);
+        }
+
+        .dark .bg-white {
+            background-color: #2d3748;
+        }
+
+        .dark .text-gray-700 {
+            color: #e2e8f0;
+        }
+
+        .dark .text-gray-600 {
+            color: #cbd5e0;
+        }
+
+        .highlight {
+            position: relative;
+            display: inline-block;
+        }
+
+        .highlight::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 30%;
+            width: 100%;
+            background-color: rgba(104, 211, 145, 0.2);
+            z-index: -1;
+        }
+
+        .dark .highlight::after {
+            background-color: rgba(104, 211, 145, 0.3);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0">
+                        <i class="fas fa-seedling text-2xl text-green-600 dark:text-green-400"></i>
+                        <span class="ml-2 text-xl font-semibold">生命力指南</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="darkModeToggle"
+                        class="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-moon text-gray-600 dark:text-yellow-300"></i>
+                    </button>
+                    <a href="summary.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium bg-gray-100 dark:bg-gray-700">
+                        <i class="fas fa-info-circle mr-1"></i>概览
+                    </a>
+                    <a href="psychology.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-brain mr-1"></i>心理调整
+                    </a>
+                    <a href="physical.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-heartbeat mr-1"></i>身体健康
+                    </a>
+                    <a href="tcm.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-yin-yang mr-1"></i>中医方法
+                    </a>
+                    <a href="resources.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-book mr-1"></i>资源
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+        <!-- 标题和介绍 -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4 text-gray-800 dark:text-white">恢复生命力的方法</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+                探索全面恢复活力的多维方案，融合现代科学与传统智慧
+            </p>
+        </div>
+
+        <!-- 研究发现卡片 -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                <i class="fas fa-flask text-green-600 dark:text-green-400 mr-3"></i>研究发现
+            </h2>
+            <div class="space-y-5">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium text-gray-800 dark:text-white">研究表明</h3>
+                        <p class="mt-1 text-gray-600 dark:text-gray-300">通过正念、运动和健康饮食可以提升活力，但效果因人而异。</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-100 dark:bg-yellow-900 text-yellow-600 dark:text-yellow-400">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium text-gray-800 dark:text-white">似乎可能</h3>
+                        <p class="mt-1 text-gray-600 dark:text-gray-300">结合心理调整和传统方法能更全面地恢复精力。</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="text-lg font-medium text-gray-800 dark:text-white">证据倾向于</h3>
+                        <p class="mt-1 text-gray-600 dark:text-gray-300">良好的睡眠和压力管理对活力至关重要。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景与方法 -->
+        <div
+            class="bg-gradient-to-br from-green-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                <i class="fas fa-info-circle text-blue-600 dark:text-blue-400 mr-3"></i>背景与方法
+            </h2>
+            <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                恢复生命力是一个<span class="highlight">复杂的过程</span>，涉及多个方面的平衡，包括心理健康、身体状态、生活方式调整和精神追求。
+            </p>
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                本指南综合了多个来源的建议，包括健康博客、功能营养实践和社交媒体上的实用技巧，旨在为用户提供<span
+                    class="highlight">全面的指导</span>。通过整合多种方法，我们可以更好地应对当代生活中的活力流失问题。
+            </p>
+        </div>
+
+        <!-- 三大维度 -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <!-- 卡片1：心理维度 -->
+            <div class="card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                <div class="p-1 bg-gradient-to-r from-green-400 to-blue-400"></div>
+                <div class="p-6">
+                    <div
+                        class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-brain text-green-600 dark:text-green-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">心理与生活方式调整</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        通过参与喜欢的活动、帮助他人、打破日常惯例等方式，提升精神活力。参与自己热爱的事情，每天花1-2小时，可以有效对抗精神疲劳。
+                    </p>
+                    <a href="psychology.html"
+                        class="inline-flex items-center text-green-600 dark:text-green-400 hover:underline">
+                        详细了解 <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 卡片2：身体维度 -->
+            <div class="card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                <div class="p-1 bg-gradient-to-r from-blue-400 to-purple-400"></div>
+                <div class="p-6">
+                    <div
+                        class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-heartbeat text-blue-600 dark:text-blue-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">身体与健康实践</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        保持充足睡眠（7-8小时）、多喝水、定期运动（如散步或瑜伽）有助于恢复体力。平衡饮食避免加工食品，选择新鲜蔬果也至关重要。
+                    </p>
+                    <a href="physical.html"
+                        class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline">
+                        详细了解 <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 卡片3：传统维度 -->
+            <div class="card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                <div class="p-1 bg-gradient-to-r from-red-400 to-yellow-400"></div>
+                <div class="p-6">
+                    <div
+                        class="w-12 h-12 bg-red-100 dark:bg-red-900 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-yin-yang text-red-600 dark:text-red-400 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800 dark:text-white">传统中医方法</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        中医强调平衡"气"、滋养"精"，可通过针灸、气功或使用人参、枸杞等草药来恢复活力。建议咨询专业中医师制定个性化方案。
+                    </p>
+                    <a href="tcm.html" class="inline-flex items-center text-red-600 dark:text-red-400 hover:underline">
+                        详细了解 <i class="fas fa-arrow-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 关键引述 -->
+        <div class="bg-gray-50 dark:bg-gray-800 rounded-xl shadow-md p-8">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                <i class="fas fa-quote-left text-purple-600 dark:text-purple-400 mr-3"></i>关键引文
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="https://www.lifetimes.cn/article/4EuN0Lrm3EM" target="_blank"
+                    class="block p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-white dark:hover:bg-gray-700 transition-colors">
+                    <h3 class="font-medium text-gray-800 dark:text-white">恢复活力的十种办法</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Lifetimes.cn</p>
+                </a>
+                <a href="https://www.ishayoga.net/mental/how-to-keep-your-energy-moving-and-your-life-exuberant/"
+                    target="_blank"
+                    class="block p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-white dark:hover:bg-gray-700 transition-colors">
+                    <h3 class="font-medium text-gray-800 dark:text-white">How to Keep Your Energy Moving and Your Life
+                        Exuberant</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Isha Yoga</p>
+                </a>
+                <a href="https://susantaylor.org/blogs/5-steps-restore-vitality/" target="_blank"
+                    class="block p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-white dark:hover:bg-gray-700 transition-colors">
+                    <h3 class="font-medium text-gray-800 dark:text-white">5 Steps to Restore Vitality</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Susan Taylor</p>
+                </a>
+                <a href="https://www.diskinlife.com.au/ways-to-naturally-regain-or-boost-your-vitality/" target="_blank"
+                    class="block p-4 border border-gray-200 dark:border-gray-700 rounded-lg hover:bg-white dark:hover:bg-gray-700 transition-colors">
+                    <h3 class="font-medium text-gray-800 dark:text-white">Ways To Naturally Regain Or Boost Your
+                        Vitality</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Diskin Life</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-100 dark:bg-gray-900 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-seedling text-xl text-green-600 dark:text-green-400"></i>
+                    <span class="ml-2 text-lg font-semibold">生命力指南</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="summary.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-info-circle mr-1"></i>概览
+                    </a>
+                    <a href="psychology.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-brain mr-1"></i>心理调整
+                    </a>
+                    <a href="physical.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-heartbeat mr-1"></i>身体健康
+                    </a>
+                    <a href="tcm.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-yin-yang mr-1"></i>中医方法
+                    </a>
+                    <a href="resources.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-book mr-1"></i>资源
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 dark:text-gray-400 text-sm">
+                © 2023 生命力指南 | 本网站内容仅供参考，不构成医疗建议
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 深色模式切换
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // 检查系统偏好和本地存储
+        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const storedTheme = localStorage.getItem('theme');
+
+        // 应用主题
+        if (storedTheme === 'dark' || (!storedTheme && prefersDarkMode)) {
+            html.classList.add('dark');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun text-yellow-300"></i>';
+        }
+
+        // 切换主题
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const isDark = html.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            darkModeToggle.innerHTML = isDark
+                ? '<i class="fas fa-sun text-yellow-300"></i>'
+                : '<i class="fas fa-moon text-gray-600"></i>';
+        });
+    </script>
+</body>
+
+</html>

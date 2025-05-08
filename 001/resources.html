@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恢复生命力指南 | 资源</title>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2a6b54;
+            --secondary-color: #f0f4f1;
+            --accent-color: #e79e4f;
+            --text-color: #333333;
+            --light-text: #6b7280;
+            --dark-bg: #1a202c;
+            --dark-text: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        .dark {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+        .dark .bg-white {
+            background-color: #2d3748;
+        }
+
+        .dark .text-gray-700 {
+            color: #e2e8f0;
+        }
+
+        .dark .text-gray-600 {
+            color: #cbd5e0;
+        }
+
+        .resource-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0">
+                        <i class="fas fa-seedling text-2xl text-green-600 dark:text-green-400"></i>
+                        <span class="ml-2 text-xl font-semibold">生命力指南</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="darkModeToggle"
+                        class="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-moon text-gray-600 dark:text-yellow-300"></i>
+                    </button>
+                    <a href="summary.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-info-circle mr-1"></i>概览
+                    </a>
+                    <a href="psychology.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-brain mr-1"></i>心理调整
+                    </a>
+                    <a href="physical.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-heartbeat mr-1"></i>身体健康
+                    </a>
+                    <a href="tcm.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-yin-yang mr-1"></i>中医方法
+                    </a>
+                    <a href="resources.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium bg-gray-100 dark:bg-gray-700">
+                        <i class="fas fa-book mr-1"></i>资源
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+        <!-- 标题和介绍 -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4 text-gray-800 dark:text-white">延伸阅读与资源</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+                深入探索恢复生命力的优质书籍、研究和工具
+            </p>
+        </div>
+
+        <!-- 推荐书籍 -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-800 dark:text-white">推荐书籍</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 书籍1 -->
+                <div class="resource-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-1 bg-gradient-to-r from-blue-400 to-indigo-400"></div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <i class="fas fa-book text-blue-600 dark:text-blue-400 text-2xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">《心流：最优体验心理学》</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">米哈里·契克森米哈赖</p>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            探讨如何通过全神贯注的"心流"状态提升生活质量和活力。这本经典著作解释了如何找到内在动力，进入充满能量的专注状态。
+                        </p>
+                        <div class="flex items-center text-blue-600 dark:text-blue-400">
+                            <i class="fas fa-tags mr-2"></i>
+                            <div class="text-xs">
+                                <span
+                                    class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded mr-1 mb-1">心理学</span>
+                                <span
+                                    class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded mr-1 mb-1">专注力</span>
+                                <span
+                                    class="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded mb-1">动机</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 书籍2 -->
+                <div class="resource-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-1 bg-gradient-to-r from-green-400 to-teal-400"></div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <i class="fas fa-book text-green-600 dark:text-green-400 text-2xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">《黄帝内经》现代解读</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">梁冬</p>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            用现代视角解读中医经典《黄帝内经》中关于养生、平衡与生命力的智慧。通过实用的方式呈现古老智慧在当代生活中的应用。
+                        </p>
+                        <div class="flex items-center text-green-600 dark:text-green-400">
+                            <i class="fas fa-tags mr-2"></i>
+                            <div class="text-xs">
+                                <span
+                                    class="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded mr-1 mb-1">中医</span>
+                                <span
+                                    class="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded mr-1 mb-1">养生</span>
+                                <span
+                                    class="inline-block bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded mb-1">健康</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 书籍3 -->
+                <div class="resource-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-1 bg-gradient-to-r from-purple-400 to-pink-400"></div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <i class="fas fa-book text-purple-600 dark:text-purple-400 text-2xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">《为什么我们睡觉》</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">马修·沃克</p>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            深入探讨睡眠对健康、活力和精神状态的关键影响。这本书揭示了睡眠如何影响我们的每一个生理系统，以及如何优化睡眠质量。
+                        </p>
+                        <div class="flex items-center text-purple-600 dark:text-purple-400">
+                            <i class="fas fa-tags mr-2"></i>
+                            <div class="text-xs">
+                                <span
+                                    class="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded mr-1 mb-1">睡眠</span>
+                                <span
+                                    class="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded mr-1 mb-1">神经科学</span>
+                                <span
+                                    class="inline-block bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded mb-1">健康</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 书籍4 -->
+                <div class="resource-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-1 bg-gradient-to-r from-red-400 to-orange-400"></div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <i class="fas fa-book text-red-600 dark:text-red-400 text-2xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">《精力管理》</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">吉姆·洛尔 & 托尼·施瓦茨</p>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            提供全面的精力管理策略，包括身体、情感、思维和精神方面的实践。作者介绍了高效能人士如何管理和恢复精力的具体方法。
+                        </p>
+                        <div class="flex items-center text-red-600 dark:text-red-400">
+                            <i class="fas fa-tags mr-2"></i>
+                            <div class="text-xs">
+                                <span
+                                    class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-2 py-1 rounded mr-1 mb-1">精力管理</span>
+                                <span
+                                    class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-2 py-1 rounded mr-1 mb-1">生产力</span>
+                                <span
+                                    class="inline-block bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-2 py-1 rounded mb-1">工作表现</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 书籍5 -->
+                <div class="resource-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-1 bg-gradient-to-r from-yellow-400 to-amber-400"></div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <i class="fas fa-book text-yellow-600 dark:text-yellow-400 text-2xl mb-2"></i>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">《能量的本质》</h3>
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">瑟德拉·辛格</p>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            结合现代科学与古老瑜伽智慧，探讨如何理解和优化我们体内的能量系统。书中提供了实用的技巧来平衡生活中的能量流动。
+                        </p>
+                        <div class="flex items-center text-yellow-600 dark:text-yellow-400">
+                            <i class="fas fa-tags mr-2"></i>
+                            <div class="text-xs">
+                                <span
+                                    class="inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded mr-1 mb-1">瑜伽</span>
+                                <span
+                                    class="inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded mr-1 mb-1">能量</span>
+                                <span
+                                    class="inline-block bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded mb-1">冥想</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 网络资源 -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-800 dark:text-white">优质网络资源</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 资源组1 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">文章与博客</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://www.lifetimes.cn/article/4EuN0Lrm3EM" target="_blank"
+                                class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <div class="font-medium text-blue-600 dark:text-blue-400">恢复活力的十种办法</div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Lifetimes.cn</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.ishayoga.net/mental/how-to-keep-your-energy-moving-and-your-life-exuberant/"
+                                target="_blank" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <div class="font-medium text-blue-600 dark:text-blue-400">How to Keep Your Energy Moving
+                                    and Your Life Exuberant</div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Isha Yoga</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://susantaylor.org/blogs/5-steps-restore-vitality/" target="_blank"
+                                class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <div class="font-medium text-blue-600 dark:text-blue-400">5 Steps to Restore Vitality
+                                </div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Susan Taylor</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.diskinlife.com.au/ways-to-naturally-regain-or-boost-your-vitality/"
+                                target="_blank" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <div class="font-medium text-blue-600 dark:text-blue-400">Ways To Naturally Regain Or
+                                    Boost Your Vitality</div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Diskin Life</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 资源组2 -->
+                <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">中医与健康资源</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/chinese-medicine"
+                                target="_blank" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <div class="font-medium text-green-600 dark:text-green-400">Chinese Medicine</div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Johns Hopkins Medicine</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://draxe.com/nutrition/top-chinese-herbs-and-superfoods/" target="_blank"
+                                class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <div class="font-medium text-green-600 dark:text-green-400">Best Chinese Herbs to
+                                    Improve Health</div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Dr. Axe</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://medium.com/@sheridavidson_71414/understanding-jing-the-essence-of-vitality-in-traditional-chinese-medicine-3766c3ac1ddd"
+                                target="_blank" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <div class="font-medium text-green-600 dark:text-green-400">Understanding Jing: The
+                                    Essence of Vitality in TCM</div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Sheri Davidson</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.thomsonmedical.com/blog/10-restorative-herbs-recommended-by-our-tcm-physicians"
+                                target="_blank" class="block p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700">
+                                <div class="font-medium text-green-600 dark:text-green-400">10 Restorative Herbs
+                                    Recommended by TCM Physicians</div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Thomson Medical</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 应用与工具 -->
+        <div
+            class="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white text-center">实用应用与工具</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-white/80 dark:bg-gray-800/50 p-4 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-moon text-indigo-500 mr-2 text-xl"></i>
+                        <h3 class="font-bold text-gray-800 dark:text-white">Sleep Cycle</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        智能闹钟和睡眠追踪应用，帮助优化睡眠周期，提升睡眠质量和活力。
+                    </p>
+                </div>
+                <div class="bg-white/80 dark:bg-gray-800/50 p-4 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-om text-amber-500 mr-2 text-xl"></i>
+                        <h3 class="font-bold text-gray-800 dark:text-white">Insight Timer</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        提供大量免费冥想和放松练习，帮助减轻压力，恢复精神活力。
+                    </p>
+                </div>
+                <div class="bg-white/80 dark:bg-gray-800/50 p-4 rounded-lg shadow">
+                    <div class="flex items-center mb-3">
+                        <i class="fas fa-tint text-blue-500 mr-2 text-xl"></i>
+                        <h3 class="font-bold text-gray-800 dark:text-white">WaterMinder</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        水分摄入追踪应用，帮助你保持身体水分，预防脱水导致的疲劳。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-100 dark:bg-gray-900 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-seedling text-xl text-green-600 dark:text-green-400"></i>
+                    <span class="ml-2 text-lg font-semibold">生命力指南</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="summary.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-info-circle mr-1"></i>概览
+                    </a>
+                    <a href="psychology.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-brain mr-1"></i>心理调整
+                    </a>
+                    <a href="physical.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-heartbeat mr-1"></i>身体健康
+                    </a>
+                    <a href="tcm.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-yin-yang mr-1"></i>中医方法
+                    </a>
+                    <a href="resources.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-book mr-1"></i>资源
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 dark:text-gray-400 text-sm">
+                © 2023 生命力指南 | 本网站内容仅供参考，不构成医疗建议
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 深色模式切换
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // 检查系统偏好和本地存储
+        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const storedTheme = localStorage.getItem('theme');
+
+        // 应用主题
+        if (storedTheme === 'dark' || (!storedTheme && prefersDarkMode)) {
+            html.classList.add('dark');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun text-yellow-300"></i>';
+        }
+
+        // 切换主题
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const isDark = html.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            darkModeToggle.innerHTML = isDark
+                ? '<i class="fas fa-sun text-yellow-300"></i>'
+                : '<i class="fas fa-moon text-gray-600"></i>';
+        });
+    </script>
+</body>
+
+</html>

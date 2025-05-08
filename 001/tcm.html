@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恢复生命力指南 | 中医方法</title>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2a6b54;
+            --secondary-color: #f0f4f1;
+            --accent-color: #e79e4f;
+            --text-color: #333333;
+            --light-text: #6b7280;
+            --dark-bg: #1a202c;
+            --dark-text: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        .dark {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+        .dark .bg-white {
+            background-color: #2d3748;
+        }
+
+        .dark .text-gray-700 {
+            color: #e2e8f0;
+        }
+
+        .dark .text-gray-600 {
+            color: #cbd5e0;
+        }
+
+        .tcm-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .tcm-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .herb-badge {
+            transition: all 0.3s ease;
+        }
+
+        .herb-badge:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0">
+                        <i class="fas fa-seedling text-2xl text-green-600 dark:text-green-400"></i>
+                        <span class="ml-2 text-xl font-semibold">生命力指南</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="darkModeToggle"
+                        class="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-moon text-gray-600 dark:text-yellow-300"></i>
+                    </button>
+                    <a href="summary.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-info-circle mr-1"></i>概览
+                    </a>
+                    <a href="psychology.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-brain mr-1"></i>心理调整
+                    </a>
+                    <a href="physical.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-heartbeat mr-1"></i>身体健康
+                    </a>
+                    <a href="tcm.html" class="px-3 py-2 rounded-md text-sm font-medium bg-gray-100 dark:bg-gray-700">
+                        <i class="fas fa-yin-yang mr-1"></i>中医方法
+                    </a>
+                    <a href="resources.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-book mr-1"></i>资源
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+        <!-- 标题和介绍 -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4 text-gray-800 dark:text-white">传统中医方法</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+                源自古老东方智慧的生命能量平衡之道
+            </p>
+        </div>
+
+        <!-- 中医概念介绍 -->
+        <div class="bg-red-50 dark:bg-red-900/20 rounded-xl p-8 mb-12">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                中医强调平衡"气"、滋养"精"，可通过针灸、气功或使用人参、枸杞等草药来恢复活力。传统中医观念认为，生命力源于体内精、气、神的平衡，通过调和阴阳、疏通经络，可以恢复人体自然的活力状态。以下是几种经典的传统中医恢复生命力的方法。
+            </p>
+        </div>
+
+        <!-- 阴阳平衡图示 -->
+        <div class="flex justify-center mb-16">
+            <div class="relative w-64 h-64">
+                <div
+                    class="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-full shadow-xl">
+                </div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-56 h-56 rounded-full overflow-hidden relative">
+                        <div class="absolute top-0 left-0 w-28 h-56 bg-black dark:bg-gray-900"></div>
+                        <div class="absolute top-0 right-0 w-28 h-56 bg-white dark:bg-gray-200"></div>
+                        <div class="absolute top-0 left-0 w-56 h-28">
+                            <div class="absolute top-7 left-7 w-14 h-14 bg-white dark:bg-gray-200 rounded-full"></div>
+                        </div>
+                        <div class="absolute bottom-0 right-0 w-56 h-28">
+                            <div class="absolute bottom-7 right-7 w-14 h-14 bg-black dark:bg-gray-900 rounded-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 核心中医方法 -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-bold mb-8 text-center text-gray-800 dark:text-white">核心中医方法</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 方法1：平衡气血阴阳 -->
+                <div class="tcm-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-1 bg-gradient-to-r from-red-400 to-orange-400"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-red-100 dark:bg-red-900 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-yin-yang text-red-600 dark:text-red-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">平衡气血阴阳</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            中医认为，气通过身体的经络流动，任何不平衡都会导致疾病。通过正确的饮食、作息和心态调整，可以平衡阴阳，促进气血流通。
+                        </p>
+                        <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                            <h4 class="font-medium text-red-600 dark:text-red-400 mb-2">实践方法</h4>
+                            <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>根据体质调整饮食（如热性体质避免辛辣）</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>规律作息，尤其是"子午觉"（23-1点睡，11-13点午休）</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>针灸疗法调整经络气血流通</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 方法2：滋养精气 -->
+                <div class="tcm-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-1 bg-gradient-to-r from-purple-400 to-pink-400"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-water text-purple-600 dark:text-purple-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">滋养精气</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            精是生命力的本质，通过均衡的生活方式和饮食选择来保护。避免过度劳累，保持情绪稳定，辅以适当的补养，可以滋养精气。
+                        </p>
+                        <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                            <h4 class="font-medium text-purple-600 dark:text-purple-400 mb-2">实践方法</h4>
+                            <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>适当进行运动，但避免过度消耗</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>精神调养，保持情绪稳定</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>食用滋补肾精的食物（如黑芝麻、黑豆、核桃等）</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 方法3：草药调理 -->
+                <div class="tcm-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-1 bg-gradient-to-r from-green-400 to-teal-400"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-leaf text-green-600 dark:text-green-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">草药调理</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            常用草药包括人参（提升能量）、枸杞（支持整体健康）、五味子（平衡身体能量）和黄芪（增强免疫力）。建议咨询TCM从业者，了解适合自己的草药。
+                        </p>
+                        <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                            <h4 class="font-medium text-green-600 dark:text-green-400 mb-2">常用草药</h4>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span
+                                    class="herb-badge px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-xs">人参</span>
+                                <span
+                                    class="herb-badge px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-xs">枸杞</span>
+                                <span
+                                    class="herb-badge px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-xs">五味子</span>
+                                <span
+                                    class="herb-badge px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-xs">黄芪</span>
+                                <span
+                                    class="herb-badge px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-xs">灵芝</span>
+                                <span
+                                    class="herb-badge px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 rounded-full text-xs">西洋参</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 方法4：针灸气功 -->
+                <div class="tcm-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                    <div class="p-1 bg-gradient-to-r from-blue-400 to-indigo-400"></div>
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-hand-sparkles text-blue-600 dark:text-blue-400 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 dark:text-white">针灸与气功</h3>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            针灸通过刺激特定穴位，疏通经络，调节气血；气功则通过呼吸和身体运动，培养和引导体内气的流动，增强生命力。
+                        </p>
+                        <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                            <h4 class="font-medium text-blue-600 dark:text-blue-400 mb-2">实践方法</h4>
+                            <ul class="text-gray-600 dark:text-gray-300 text-sm space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>寻找合格的针灸师进行专业治疗</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>学习基础气功动作，如八段锦、太极拳</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>结合冥想和腹式呼吸，增强气的感知和引导</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 中医养生时钟 -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                <i class="fas fa-clock text-yellow-600 dark:text-yellow-400 mr-3"></i>中医养生时钟
+            </h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">
+                中医认为，人体各器官有其活跃时间，按照这一规律生活，可以有效增强生命力：
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+                    <div class="font-bold text-yellow-800 dark:text-yellow-300">23:00-01:00 胆经当令</div>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">此时应入睡，有助于排毒和养肝</p>
+                </div>
+                <div class="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+                    <div class="font-bold text-yellow-800 dark:text-yellow-300">01:00-03:00 肝经当令</div>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">深度睡眠时间，肝脏进行解毒和修复</p>
+                </div>
+                <div class="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+                    <div class="font-bold text-yellow-800 dark:text-yellow-300">05:00-07:00 大肠经当令</div>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">适合起床和排便，清理体内废物</p>
+                </div>
+                <div class="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+                    <div class="font-bold text-yellow-800 dark:text-yellow-300">07:00-09:00 胃经当令</div>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">早餐时间，胃消化功能最佳</p>
+                </div>
+                <div class="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+                    <div class="font-bold text-yellow-800 dark:text-yellow-300">11:00-13:00 心经当令</div>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">适合午休，使心脏得到休息</p>
+                </div>
+                <div class="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+                    <div class="font-bold text-yellow-800 dark:text-yellow-300">17:00-19:00 肾经当令</div>
+                    <p class="text-sm text-gray-600 dark:text-gray-300 mt-1">晚餐时间，注意补肾养生</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 注意事项 -->
+        <div
+            class="bg-gradient-to-br from-red-50 to-orange-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg p-8">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white">重要注意事项</h2>
+            <div class="bg-white/70 dark:bg-gray-800/50 p-6 rounded-lg shadow">
+                <p class="text-gray-700 dark:text-gray-300 text-lg mb-4">
+                    虽然传统中医方法对许多人有益，但请注意以下几点：
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-2"></i>
+                        <span class="text-gray-600 dark:text-gray-300">中医治疗应在专业中医师指导下进行，尤其是草药和针灸</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-2"></i>
+                        <span class="text-gray-600 dark:text-gray-300">如果您正在服用西药，请在使用中药前咨询医生，避免潜在的相互作用</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-2"></i>
+                        <span class="text-gray-600 dark:text-gray-300">中医方法可以作为补充疗法，但不应替代必要的现代医学治疗</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-2"></i>
+                        <span class="text-gray-600 dark:text-gray-300">每个人的体质不同，适合的中医方法也各不相同，应个性化调整</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-100 dark:bg-gray-900 py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-seedling text-xl text-green-600 dark:text-green-400"></i>
+                    <span class="ml-2 text-lg font-semibold">生命力指南</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="summary.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-info-circle mr-1"></i>概览
+                    </a>
+                    <a href="psychology.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-brain mr-1"></i>心理调整
+                    </a>
+                    <a href="physical.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-heartbeat mr-1"></i>身体健康
+                    </a>
+                    <a href="tcm.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-yin-yang mr-1"></i>中医方法
+                    </a>
+                    <a href="resources.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-book mr-1"></i>资源
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 dark:text-gray-400 text-sm">
+                © 2023 生命力指南 | 本网站内容仅供参考，不构成医疗建议
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 深色模式切换
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // 检查系统偏好和本地存储
+        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const storedTheme = localStorage.getItem('theme');
+
+        // 应用主题
+        if (storedTheme === 'dark' || (!storedTheme && prefersDarkMode)) {
+            html.classList.add('dark');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun text-yellow-300"></i>';
+        }
+
+        // 切换主题
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const isDark = html.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            darkModeToggle.innerHTML = isDark
+                ? '<i class="fas fa-sun text-yellow-300"></i>'
+                : '<i class="fas fa-moon text-gray-600"></i>';
+        });
+    </script>
+</body>
+
+</html>

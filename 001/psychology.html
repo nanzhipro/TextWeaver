@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恢复生命力指南 | 心理调整</title>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2a6b54;
+            --secondary-color: #f0f4f1;
+            --accent-color: #e79e4f;
+            --text-color: #333333;
+            --light-text: #6b7280;
+            --dark-bg: #1a202c;
+            --dark-text: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        .dark {
+            background-color: var(--dark-bg);
+            color: var(--dark-text);
+        }
+
+        .dark .bg-white {
+            background-color: #2d3748;
+        }
+
+        .dark .text-gray-700 {
+            color: #e2e8f0;
+        }
+
+        .dark .text-gray-600 {
+            color: #cbd5e0;
+        }
+
+        .method-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .method-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <!-- 导航栏 -->
+    <nav class="bg-white shadow-md dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0">
+                        <i class="fas fa-seedling text-2xl text-green-600 dark:text-green-400"></i>
+                        <span class="ml-2 text-xl font-semibold">生命力指南</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button id="darkModeToggle"
+                        class="p-1 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-moon text-gray-600 dark:text-yellow-300"></i>
+                    </button>
+                    <a href="summary.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-info-circle mr-1"></i>概览
+                    </a>
+                    <a href="psychology.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium bg-gray-100 dark:bg-gray-700">
+                        <i class="fas fa-brain mr-1"></i>心理调整
+                    </a>
+                    <a href="physical.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-heartbeat mr-1"></i>身体健康
+                    </a>
+                    <a href="tcm.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-yin-yang mr-1"></i>中医方法
+                    </a>
+                    <a href="resources.html"
+                        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <i class="fas fa-book mr-1"></i>资源
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <div class="max-w-6xl mx-auto px-4 py-12">
+        <!-- 标题和介绍 -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4 text-gray-800 dark:text-white">心理与生活方式调整</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto">
+                通过心理活动和生活方式的调整，重新连接内在动力与活力
+            </p>
+        </div>
+
+        <!-- 介绍段落 -->
+        <div class="bg-green-50 dark:bg-green-900/20 rounded-xl p-8 mb-12">
+            <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+                通过参与喜欢的活动、帮助他人、打破日常惯例等方式，可以提升精神活力。例如，每天花1-2小时做喜欢的事，或尝试新路线回家，增加新鲜感。研究表明，专注于可控的事情和进入"心流状态"（如绘画或游戏）也能减少疲劳。以下是十种经过验证的心理与生活方式调整方法，帮助您恢复精神活力。
+            </p>
+        </div>
+
+        <!-- 方法列表 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <!-- 方法1：做你真正想做的事 -->
+            <div class="method-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                <div class="p-1 bg-gradient-to-r from-green-400 to-blue-400"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-heart text-green-600 dark:text-green-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white">做你真正想做的事</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        每天花1-2小时参与喜欢的活动，确保自主性，抵消被控制的感觉。这可以是阅读、烹饪、园艺或任何让你感到愉悦的活动。
+                    </p>
+                    <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                        <h4 class="font-medium text-green-600 dark:text-green-400 mb-2">实践建议</h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            制定一个"快乐清单"，列出所有让你感到愉悦的活动，每天从中选择一项，投入至少30分钟的时间。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 方法2：贡献个人价值 -->
+            <div class="method-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                <div class="p-1 bg-gradient-to-r from-green-400 to-blue-400"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-hands-helping text-blue-600 dark:text-blue-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white">贡献个人价值</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        参与志愿服务或帮助他人（如指引路），增强能量感和影响力。研究表明，助人行为能显著提升个人幸福感和活力。
+                    </p>
+                    <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                        <h4 class="font-medium text-blue-600 dark:text-blue-400 mb-2">实践建议</h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            每周安排一次志愿服务活动，或者关注身边可以提供帮助的小事，如为邻居提供支持或分享专业知识。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 方法3：重新连接年轻时的自己 -->
+            <div class="method-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                <div class="p-1 bg-gradient-to-r from-purple-400 to-pink-400"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-images text-purple-600 dark:text-purple-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white">重新连接年轻时的自己</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        通过旧照片、青春时期的音乐或与老友见面，回顾积极回忆，激发生活动力。这些回忆能唤起当时的活力和热情。
+                    </p>
+                    <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                        <h4 class="font-medium text-purple-600 dark:text-purple-400 mb-2">实践建议</h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            创建一个"青春回忆"播放列表，包含年轻时期喜欢的音乐，或翻看老照片，重新联系久未联系的朋友。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 方法4：专注于可控的行动 -->
+            <div class="method-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                <div class="p-1 bg-gradient-to-r from-yellow-400 to-orange-400"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-yellow-100 dark:bg-yellow-900 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-bullseye text-yellow-600 dark:text-yellow-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white">专注于可控的行动</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        将注意力放在现在能做的事情上，避免因不可控问题导致精神疲惫。这种思维方式可以减少焦虑，提升行动力。
+                    </p>
+                    <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                        <h4 class="font-medium text-yellow-600 dark:text-yellow-400 mb-2">实践建议</h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            每天列出三件完全在你控制范围内的事情，并专注于完成它们。对于不可控的事情，学会放手和接受。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 方法5：进入"心流"状态 -->
+            <div class="method-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                <div class="p-1 bg-gradient-to-r from-blue-400 to-indigo-400"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-water text-blue-600 dark:text-blue-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white">进入"心流"状态</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        选择难度与能力匹配的活动，如弹音乐器、绘画、跳舞、写作或游戏，进入心流状态。这是一种全神贯注的体验，能显著提升活力。
+                    </p>
+                    <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                        <h4 class="font-medium text-blue-600 dark:text-blue-400 mb-2">实践建议</h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            找到一项既有挑战性又在你能力范围内的活动，每周至少投入3-4小时，完全沉浸其中，不受外界干扰。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 方法6：打破常规 -->
+            <div class="method-card bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
+                <div class="p-1 bg-gradient-to-r from-red-400 to-pink-400"></div>
+                <div class="p-6">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-12 h-12 bg-red-100 dark:bg-red-900 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-random text-red-600 dark:text-red-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 dark:text-white">打破常规</h3>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 mb-4">
+                        尝试新食物、换回家路线、阅读不同类型的书或探索本地商店，增加好奇心和活力。新鲜感能激活大脑，提升生活活力。
+                    </p>
+                    <div class="bg-gray-50 dark:bg-gray-700/50 p-4 rounded-lg">
+                        <h4 class="font-medium text-red-600 dark:text-red-400 mb-2">实践建议</h4>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            每周尝试一种从未尝试过的食物；每月读一本平时不会选择的类型的书；定期更换常规路线，探索新区域。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 小贴士 -->
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800 dark:text-white flex items-center">
+                <i class="fas fa-lightbulb text-yellow-500 mr-3"></i>心理调整小贴士
+            </h2>
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                    <span class="text-gray-700 dark:text-gray-300">接受你的个性：外向者从社交活动中获得能量，内向者从独处中恢复；了解适合自己的方式，避免强迫。</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                    <span class="text-gray-700 dark:text-gray-300">坚持个人目标：明确"内在指南针"，专注于重要追求、原则和热爱，保持活力，克服困难。</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                    <span class="text-gray-700 dark:text-gray-300">在自然中行走：在公园或河边散步20分钟，即使是虚拟自然（如照片、纪录片）也能恢复活力。</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                    <span class="text-gray-700 dark:text-gray-300">运动产生多巴胺：通过适合的运动类型产生多巴胺，缓解疲劳，找到适合自己的运动强度并坚持。</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-100 dark:bg-gray-900 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-seedling text-xl text-green-600 dark:text-green-400"></i>
+                    <span class="ml-2 text-lg font-semibold">生命力指南</span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="summary.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-info-circle mr-1"></i>概览
+                    </a>
+                    <a href="psychology.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-brain mr-1"></i>心理调整
+                    </a>
+                    <a href="physical.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-heartbeat mr-1"></i>身体健康
+                    </a>
+                    <a href="tcm.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-yin-yang mr-1"></i>中医方法
+                    </a>
+                    <a href="resources.html"
+                        class="text-gray-600 dark:text-gray-400 hover:text-green-600 dark:hover:text-green-400">
+                        <i class="fas fa-book mr-1"></i>资源
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-500 dark:text-gray-400 text-sm">
+                © 2023 生命力指南 | 本网站内容仅供参考，不构成医疗建议
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 深色模式切换
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const html = document.documentElement;
+
+        // 检查系统偏好和本地存储
+        const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const storedTheme = localStorage.getItem('theme');
+
+        // 应用主题
+        if (storedTheme === 'dark' || (!storedTheme && prefersDarkMode)) {
+            html.classList.add('dark');
+            darkModeToggle.innerHTML = '<i class="fas fa-sun text-yellow-300"></i>';
+        }
+
+        // 切换主题
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark');
+            const isDark = html.classList.contains('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            darkModeToggle.innerHTML = isDark
+                ? '<i class="fas fa-sun text-yellow-300"></i>'
+                : '<i class="fas fa-moon text-gray-600"></i>';
+        });
+    </script>
+</body>
+
+</html>
